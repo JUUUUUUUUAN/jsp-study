@@ -1,0 +1,71 @@
+3장
+
+01 다음 중 디렉티브 태그로 사용하는 형식은 무엇인가? 3
+① <% … %> 
+② <jsp …> 
+③ <%@ … %> 
+④ <! …> 
+
+02 다음 중 디렉티브 태그의 종류와 형식으로 옳지 않은 것은 무엇인가? 4
+① page 태그: <%@ page … %> 
+② include 태그: <%@ include… %> 
+③ taglib 태그: <%@ taglib= … %> 
+④ action 태그: <%@ action … %> 
+
+03 JSP 페이지가 사용할 자바 클래스를 설정하기 위한 page 디렉티브 태그의 속성은 무엇인가? 2
+① language 
+② import 
+③ info 
+④ contentType 
+
+04 JSP 페이지의 특정 영역에 다른 외부 파일의 내용을 포함하는 디렉티브 태그는 무엇인가? 2
+① page 디렉티브 태그 
+② include 디렉티브 태그 
+③ taglib 디렉티브 태그 
+④ action 디렉티브 태그 
+
+05 JSP 페이지에 표현 언어, JSTL, 사용자 정의 태그(custom tag) 등 태그 라이브러리를 설정하는 디렉티브 태그는 무엇인가? 1 
+① page 디렉티브 태그 
+② include 디렉티브 태그 
+③ taglib 디렉티브 태그 
+④ action 디렉티브 태그 
+
+06 다음 프로그램의 밑줄에 들어갈 올바른 것은 무엇인가? 2
+<%@ page ________ ="java.util.Date"%>
+Today is <%= new Date()%>
+
+① language 
+② import 
+③ info 
+④ contentType 
+
+07 다음 프로그램의 밑줄에 들어갈 올바른 것은 무엇인가? 3
+<%@ ___________ uri ="http://java.sun.com/jsp/jstl/core" prefix ="c" %>
+<c:out value ="JSTL Core 태그 라이브러리"/>
+
+① page 
+② include 
+③ taglib 
+④ import 
+
+08 page 디렉티브 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행 결과를 확인하시오.
+1) page.jsp 파일을 생성한다.
+	• page 디렉티브 태그에 java.util.Date, java.lang.Math 클래스를 이용하여 현재 날짜와 5의 제곱을 출력한다.
+2) 웹 브라우저에 'http://localhost:8080/Exercise/ch03/page.jsp'를 입력하여 실행 결과를 확인한다.
+
+09 include 디렉티브 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행 결과를 확인하시오.
+1) header.jsp 파일을 생성한다.
+	• <h4> 태그를 이용하여 'Hello, Java Server Pages.'를 선언한다.
+2) include.jsp 파일을 생성한다.
+	• include 디렉티브 태그를 이용하여 외부 파일 header.jsp의 내용을 포함한다.
+	• java.util.Calendar 클래스를 이용하여 현재 시간을 출력한다.
+3) 웹 브라우저에 'http://localhost:8080/Exercise/ch03/include.jsp'를 입력하여 실행 결과를 확인한다.
+
+10 taglib 디렉티브 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행 결과를 확인하시오.
+1) /WEB-INF/lib/ 폴더에 JSTL 태그 라이브러리인 JSTL-1.2.jar 파일을 추가한다.
+2) taglib.jsp 파일을 생성한다.
+	• taglib 디렉티브 태그에 JSTL의 Core 태그를 설정하여 0부터 10까지의 짝수를 출력한다.
+3) 웹 브라우저에 'http://localhost:8080/Exercise/ch03/taglib.jsp'를 입력하여 실행 결과를 확인한다.
+
+
+

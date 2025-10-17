@@ -1,0 +1,62 @@
+1장
+
+01 JSP는 무엇의 약자인가? ①
+① Java Server Pages 
+② Java Special Pages 
+③ Java Static Pages 
+④ Java Showing Pages 
+
+02 다음 중 웹 프로그래밍 언어인 JSP의 특징에 대한 설명으로 옳지 않은 것은 무엇인가? ③
+① JSP에서는 서블릿의 모든 기능을 사용할 수 있다. 
+② JSP는 로직을 분리할 수 있기 때문에 관리하기가 쉽다. 
+③ JSP는 코드를 수정하면 업데이트를 하고 다시 컴파일해야 한다. 
+④ JSP로 개발하면 다양한 태그를 사용하여 서블릿보다 코드 길이를 줄일 수 있다. 
+
+03 다음 중 JSP 라이프 사이클의 일부로, 호출되는 표준 메소드가 아닌 것은 무엇인가? ②
+① jspInit() 
+② jspService() 
+③ _jspService() 
+④ jspDestroy() 
+
+04 다음 중 JSP 생명 주기의 초기화 단계에 대한 설명으로 옳지 않은 것은 무엇인가? 2
+① 컨테이너가 JSP를 처음 로드할 때 요청을 처리하기 전에 jspInit() 메소드를 호출한다. 
+② 초기화 단계에서 컨테이너가 _jspService() 메소드를 호출한다. 
+③ ①, ②번 두 가지 모두 해당된다. 
+④ ①, ②번 중 어느 쪽도 해당되지 않는다. 
+
+05 다음 중 JSP와 서블릿 간의 관계를 가장 잘 설명한 것은 무엇인가? ④
+① 서블릿은 JSP 시맨틱을 기반으로 구축되며 모든 서블릿은 런타임 사용을 위해 JSP 페이지로 컴파일된다. 
+② JSP와 서블릿은 관련 없는 기술이다. 
+③ 서블릿과 JSP는 웹 요청을 처리하기 위한 경쟁 기술이며, 두 기술을 함께 사용하면 유용하지 않다. 
+④ JSP는 서블릿을 기반으로 구축되며 모든 JSP는 런타임 사용을 위해 서블릿으로 컴파일된다. 
+
+06 JSP 페이지가 컴파일되면 무엇으로 바뀌는지 고르시오. 2
+① 애플릿 
+② 서블릿 
+③ 애플리케이션 
+④ 메일렛
+
+07. 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행하여 결과를 확인하시오.
+1) HelloJSP라는 이름의 프로젝트를 생성한다.
+2) src/main/webapp 폴더에 다음과 같은 hello.jsp 파일을 생성한다.
+	•<hl> 태그를 이용하여 'Hello! JSP Programming'을 출력한다.
+	•'Welcome to JSP'를 출력한다.
+3) 서버를 실행하고 웹 브라우저에 'http://localhost:8080/HelloJSP/hello.jsp'를 입력하여 실행 결과를 확인한다.
+
+08. 자기소개 페이지를 만들기 위해 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행 결과를 확인하시오.
+1) HelloJSP라는 이름의 프로젝트를 생성한다.
+2) src/main/webapp 폴더에 hello2.jsp 파일을 생성한다.
+	•<h1> 태그를 이용하여 'Self-Introduction'을 출력한다.
+	•'Name: Kim Jae Hyun'과 'Department: Goodee Academy'를 2행으로 출력한다.
+3) 서버를 실행하고 웹 브라우저에 'http://localhost:8080/HelloJSP/hello2.jsp'를 입력하여 실행 결과를 확인한다.
+
+09. 프로젝트의 구조를 이해하기 위해 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행 결과를 확인하시오.
+1) HelloJSP라는 이름의 프로젝트를 생성한다.
+2) src/main/webapp 폴더에 jsp 폴더를 만들고 다음과 같은 hello3.jsp 파일을 생성한다.
+	•<h1> 태그를 이용하여 'Welcome to JSP'를 출력한다.
+	•'JSP is Dynamic Web Page.'와 'JSP is Java Server Pages.'를 2행으로 출력한다.
+3) 서버를 실행하고 웹 브라우저에 'http://localhost:8080/HelloJSP/jsp/hello3.jsp'를 입력하여 실행 결과를 확인한다.
+
+
+
+
