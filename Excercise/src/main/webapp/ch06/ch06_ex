@@ -1,0 +1,92 @@
+6장
+
+01 폼을 구성하는 태그의 종류로 옳지 않은 것은 무엇인가? 
+① form: 폼을 정의하는 태그로 최상위 태그이다. 
+② input: 사용자가 입력할 수 있는 태그이다. 
+③ select: 항목을 선택할 수 있는 태그이다. 
+④ textarea: 한 줄을 입력할 수 있는 태그이다. 
+
+02 form 태그의 속성으로 옳지 않은 것은 무엇인가? 
+① action: 폼 데이터를 받아 처리하는 웹 페이지의 URL을 설정한다. 
+② method: 폼 데이터가 전송되는 HTTP 방식을 설정한다. 
+③ name: 폼을 식별하기 위한 이름으로 중복으로 설정할 수 있다. 
+④ enctype: 폼을 전송하는 콘텐츠 MIME 유형을 설정한다. 
+
+03 input 태그의 type 속성 값으로 옳지 않은 것은 무엇인가? 
+① text: 기본값으로 한 줄의 텍스트를 입력할 때 사용한다. 
+② password: 암호를 입력할 때 사용한다. 
+③ reset: 폼에 입력된 값을 모두 초기화할 때 사용한다. 
+④ checkbox: 체크박스로 열거된 것 중 하나만 선택할 때 사용한다. 
+
+04 input 태그의 type 속성값 중에서 보이지 않게 숨겨서 값을 전송할 때 사용하는 속성값은 무엇인가? 
+① text 
+② password 
+③ reset 
+④ hidden 
+
+05 다음 중 단일 요청 파라미터의 값을 받는 메소드는 무엇인가? 
+① request.getParameter() 
+② request.getParameterNames() 
+③ request.getParameterValues() 
+④ request.nextElement() 
+
+06 다음은 폼 페이지에서 회원 가입 양식에 연락처를 입력하는 프로그램이다. 
+이 프로그램의 밑줄에 들어갈 올바른 것은 무엇인가? 
+<form action="#" method="get">
+  <p> 연락처 : 
+  	<_________ name="phone1">
+	    <option value="02">02</option> 
+	    <option value="031">031</option>
+	    <option value="032">032</option>   
+    </________> 
+    - <input type="text" maxlength="4" size="4" name="phone2"> 
+    - <input type="text" maxlength="4" size="4" name="phone3">
+</form>
+
+① request 
+② select 
+③ input 
+④ textarea 
+
+07 다음은 폼 페이지에서 여러 줄의 텍스트를 입력할 수 있도록 작성한 것이다. 
+프로그램의 밑줄에 들어갈 올바른 것은 무엇인가? 
+<form action="#" method="get">
+		<________ name="comment" cols="30" rows="3"></________>
+		<p><input type="submit" value="전송"></p>
+		<input type="reset" value="취소">
+</form>
+
+① textarea 
+② string 
+③ text 
+④ area 
+
+08 form 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행하여 결과를 확인하시오.
+1) form01.jsp 파일을 생성한다.
+	• input 태그 내에 text 유형을 이용하여 이름, 주소, 이메일 항목을 작성한다.
+	• form 태그에 action 속성 값은 form01_process.jsp로 작성한다.
+2) form01_process.jsp 파일을 생성한다.
+	• request 내장 객체의 getParameter() 메소드를 이용하여 전송된 요청 파라미터 값을 전달받는다.
+	• StringBuffer 클래스를 이용하여 전송된 요청 파라미터 값을 저장하여 출력한다.
+3) 웹 브라우저에 'http://localhost:8080/Exercise/ch06/form01.jsp'를 입력하여 실행 결과를 확인한다.
+
+09 form 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행하여 결과를 확인하시오.
+1) form02.jsp 파일을 생성한다.
+	• input 태그 내에 text 유형을 이용하여 이름, 주소, 이메일 항목을 작성한다.
+	• form 태그에 action 속성 값은 form02_process.jsp로 작성한다.
+2) form02_process.jsp 파일을 생성한다.
+	• Enumeration 클래스를 이용하여 전송된 모든 요청 파라미터 값을 전달받는다.
+	• StringBuffer 클래스를 이용하여 전송된 요청 파라미터 이름과 값을 저장하여 출력한다.
+3) 웹 브라우저에 'http://localhost:8080/Exercise/ch06/form02.jsp'를 입력하여 실행 결과를 확인한다.
+
+10 form 태그를 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행하여 결과를 확인하시오.
+1) form03.jsp 파일을 생성한다.
+	• input 태그 내에 checkbox 유형을 이용하여 오렌지, 사과, 바나나 항목을 작성한다.
+	• form 태그에 action 속성 값은 form03_process.jsp로 작성한다.
+2) form03_process.jsp 파일을 생성한다.
+	• request 내장 객체의 getParameterValues() 메소드를 이용하여 요청 파라미터 값을 전달받아 출력한다.
+3) 웹 브라우저에 'http://localhost:8080/Exercise/ch06/form03.jsp'를 입력하여 실행 결과를 확인한다.
+
+
+
+
