@@ -1,0 +1,58 @@
+11장
+
+01 프로그램이 처리되는 동안 특정한 문제가 발생했을 때 처리를 중단하고 다른 처리를 하는 것은 무엇인가? 1 
+① 예외 처리 
+② 시큐리티 
+③ 유효성 검사 
+④ 오류 검사 
+
+02 웹 애플리케이션에서 오류가 발생하더라도 정상적인 실행 상태를 유지하는 처리 방법으로 
+옳지 않은 것은 무엇인가? 4
+① page 디렉티브 태그를 이용한 예외 처리 
+② web.xml 파일을 이용한 예외 처리 
+③ try-catch-finally를 이용한 예외 처리 
+④ 유효성 검사를 이용한 예외 처리
+
+03 JSP 페이지에서 오류가 발생하여 오류 페이지로 error.jsp를 출력하는 
+프로그램의 빈칸을 채우시오.  
+<%@ page _errorPage__= "error.jsp"%>
+
+04 web.xml 파일을 이용한 예외 처리에서 web.xml 파일을 통해 오류 상태와 오류 페이지를 보여주는 요소로 
+옳지 않은 것은 무엇인가? 4
+① <error-code> 
+② <error-page> 
+③ <exception-type> 
+④ <location-page> 
+
+05 web.xml 파일을 이용한 예외 처리에서 web.xml 파일에 오류 페이지를 호출하는 프로그램이다. 
+빈칸을 채우시오. 
+
+<web-app…>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/ch11/errorCode_error.jsp</location>
+  </error-page>
+</web-app>
+
+06 web.xml 파일을 이용한 예외 처리에서 web.xml 파일에 오류 페이지를 호출하는 프로그램이다. 
+빈칸을 채우시오. 
+
+<web-app…>
+  <error-page>
+     _<exception-type>_java.lang.NullPointerException_</exception-type>_
+     <location>/errorNullPointer.jsp</location>
+  </error-page>
+</web-app>
+
+07 예외 유형 클래스의 설명으로 옳지 않은 것은 무엇인가? 4
+① NullPointerException: null 오브젝트로 접근했을 때 발생한다. 
+② NumberFormatException: 부적절한 문자열을 수치로 변환하려 할 때 발생한다. 
+③ ArithmeticException: 어떤 값을 0으로 나누었을 때 발생한다. 
+④ IOException: 입력처리만 문제가 있을 때 발생한다. 
+
+
+
+
+
+
+

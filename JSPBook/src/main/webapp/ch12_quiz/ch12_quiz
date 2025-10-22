@@ -1,0 +1,30 @@
+ch12 개념 정리
+
+01 (필터(filter))는 클라이언트와 서버 사이에서 request와 response 객체를 먼저 받아 
+사전/사후 작업 등 공통적으로 필요한 부분을 처리하는 것을 말합니다.
+
+02 (filter) 인터페이스는 필터 기능을 구현하는 데 핵심적인 역할을 합니다. 
+클라이언트와 서버의 리소스 사이에 위치한 필터의 기능을 제공하기 위해 자바 클래스로 구현해야 합니다.
+
+03 Filter 인터페이스 메소드의 종류는 다음과 같습니다.
+init(): 필터 인스턴스의 (초기화) 메소드이다. 
+doFilter(): 필터 기능을 작성하는 메소드이다. 
+(destroy()): 인스턴스의 종료 전에 호출되는 메소드이다.
+
+04 web.xml 파일에 필터를 설정할 때는 아래와 같이 밑줄에 (     )와 (        ) 요소를 사용합니다.
+<filter>
+	<filter-name>...</filter-name>
+	<filter-class>...</filter-class>
+	[<init-param>
+		<param-name>...</param-name>
+		<param-value>...</param-value>
+	<init-param>]
+</filter>
+<filter-mapping>
+	<filter-name>...</filter-name>
+	<url-pattern>...</url-pattern>
+</filter-mapping>
+	
+
+
+
