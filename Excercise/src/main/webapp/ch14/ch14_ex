@@ -1,0 +1,55 @@
+14장
+
+01 Cookie 클래스의 메소드에 해당하지 않는 것은 무엇인가?  3
+① getName() 
+② getValue() 
+③ setName() 	
+④ setValue() 
+
+02 JSP 페이지에서 쿠키를 설정하는 메소드는 무엇인가? 4
+① Cookie() 
+② getCookies() 
+③ setMaxAge() 
+④ addCookie() 
+
+03 JSP 페이지에서 설정된 쿠키를 삭제하는 메소드는 무엇인가? 3 
+① Cookie() 
+② getCookies() 
+③ setMaxAge() 
+④ addCookie() 
+
+04 JSP 페이지에서 설정된 하나의 쿠키 정보를 얻는 메소드는 무엇인가? 1
+① Cookie() 
+② getCookies() 
+③ setMaxAge() 
+④ addCookie() 
+
+05 JSP 페이지에서 설정된 하나의 쿠키 정보를 얻기 위해 쿠키 이름과 값을 가져오는 메소드는 무엇인가? 1
+① getName(), getValue() 
+② getNameCookie(), getValueCookie() 
+③ setCookieName(), setCookieValue() 
+④ setName(), setValue() 
+
+06 JSP 페이지에서 쿠키 객체를 생성하는 프로그램의 빈칸을 채우시오. 
+Cookie cookie_id = new Cookie("id", "admin");
+Cookie cookie_pw = new Cookie("pw", "admin1234");
+response.addCookies(cookie_id );
+response.addCookies(cookie_pw);
+
+07 JSP 페이지에서 쿠키 객체에 저장된 모든 쿠키 이름과 값을 가져와 출력하는 프로그램의 빈칸을 채우시오. 
+Cookie[] cookies = request.getCookies();
+for (int i = 0; i < cookies.length; i++) {
+   out.println("쿠키 이름: " + cookies[i].getName() + " 쿠키 값: " + 
+   cookies[i].getValue + "<br>");
+}
+ 
+08 JSP 페이지에서 쿠키 객체에 저장된 모든 쿠키 중 이름이 memberId인 쿠키 하나만 삭제하는 
+프로그램의 빈칸을 채우시오. 
+Cookie cookie = new Cookie("memberId", "");
+cookie.setMaxAge(0);
+response.addCookie(cookie);
+
+
+
+
+

@@ -1,0 +1,70 @@
+13장
+
+01 session 내장 객체 메소드에 해당하지 않는 것은 무엇인가? 3
+① getAttribute() 
+② setAttribute() 
+③ isNow() 
+④ removeAttribute() 
+
+02 JSP 페이지에서 세션을 설정하는 메소드는 무엇인가? 2
+① getAttribute() 
+② setAttribute() 
+③ getAttributeNames() 
+④ removeAttribute() 
+
+03 JSP 페이지에서 설정된 세션을 삭제하는 메소드는 무엇인가? 4 
+① getAttribute() 
+② setAttribute() 
+③ getAttributeNames() 
+④ removeAttribute() 
+
+04 JSP 페이지에서 세션에 설정된 하나의 세션 정보를 얻는 메소드는 무엇인가? 3 
+① getAttribute() 
+② setAttribute() 
+③ getAttributeNames() 
+④ removeAttribute() 
+
+05 JSP 페이지에서 세션에 설정된 여러 개의 세션 정보를 얻는 메소드는 무엇인가? 3 
+① getAttribute() 
+② setAttribute() 
+③ getAttributeNames() 
+④ removeAttribute() 
+
+06 JSP 페이지에서 세션 유효 시간을 30분으로 설정하는 예로 옳은 것은 무엇인가? 1
+① setMaxInactiveInterval(30 * 60); 
+② setMaxInactiveInterval(30); 
+③ setMaxInactiveInterval(30 * 60 * 60); 
+④ setMaxInactiveInterval(30 / 60); 
+
+07 JSP 페이지에서 현재 세션에 저장된 모든 세션 속성을 제거하는 것은 무엇인가? 3
+① isNew() 
+② getCreationTime() 
+③ invalidate() 
+④ removeAttribute() 
+
+08 JSP 페이지에서 현재 세션에 저장된 세션 속성을 제거하는 메소드에 해당하지 않는 것은 무엇인가? 2
+① setMaxInactiveInterval() 
+② getLastAccessedTime() 
+③ invalidate() 
+④ removeAttribute() 
+
+09 세션을 이용하여 다음 조건에 맞게 JSP 애플리케이션을 만들고 실행하여 결과를 확인하시오.
+1) session.jsp 파일을 생성한다.
+	• input 태그 내에 text 유형을 이용하여 아이디, 비밀번호 항목을 작성한다.
+	• form 태그에 action 속성 값은 session_process.jsp로 작성한다.
+2) session_process.jsp 파일을 생성한다.
+	• request 내장 객체의 getParameter() 메소드를 이용하여 전송된 요청 파라미터 값을 전달받는다.
+	• 아이디와 비밀번호가 인증되면 아이디 값을 세션명 userlD에 세션 값으로 설정한다.
+	• response 내장 객체의 sendRedirect() 메소드를 이용하여 welcome.jsp 파일로 이동한다.
+3) welcome.jsp 파일을 생성한다.
+	• 설정된 세션명 userID 값이 null이면 response 내장 객체의 sendRedirect() 메소드를 
+		이용하여 session_out.jsp 파일로 이동한다.
+	• '로그아웃'을 클릭하면 설정된 세션을 해제하도록 작성한다.(a 태그를 이용하여 session_out.jsp로 링크 연결)
+4) session_out.jsp 파일을 생성한다.
+	• 설정된 모든 세션명을 해제하도록 작성한다.
+	• response 내장 객체의 sendRedirect() 메소드를 이용하여 session.jsp 파일로 이동한다.
+5) 웹 브라우저에 'http://localhost:8080/Exercise/ch13/session.jsp'를 입력하여 실행 결과를 확인한다.
+
+
+
+

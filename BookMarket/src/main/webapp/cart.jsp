@@ -73,7 +73,7 @@
     				<td><%= quantity %></td>
     				<td><%= total %></td>
     				<td>
-    					<a href="./removeCart.jsp?id=<%= item.getBookId() %>" class="badge text-bg-danger"></a>
+    					<a href="./removeCart.jsp?id=<%= item.getBookId() %>" class="badge text-bg-danger">삭제</a>
     				</td>
     			</tr>
     			<% 

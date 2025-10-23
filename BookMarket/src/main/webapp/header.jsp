@@ -1,28 +1,43 @@
-<%@page import="java.time.LocalDateTime"%>
-<%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Welcome</title>
-
-<!-- 부트스트랩 연결 -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Insert title here</title>
 </head>
 <body>
 	<!-- 헤더(메뉴) 영역 -->
-		<header class="pb-3 mb-4 border-bottom">
-	    <a href="./welcome.jsp" class="d-flex align-items-center text-dark text-decoration-none">
-	    	<!-- 홈 아이콘 -->
-		    <svg width="32" height="32" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
-		  		<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
-		  		<path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
-				</svg>
-				<!-- 홈 메뉴 -->
-		    <span class="fs-4">Home</span>
-	    </a>
-    </header>
+	<header class="pb-3 mb-4 border-bottom">
+		<div class="container">
+			<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+		    <a href="./welcome.jsp" class="d-flex align-items-center text-dark text-decoration-none mb-3 mb-md-0 me-md-auto">
+		    	<!-- 홈 아이콘 -->
+			    <svg width="32" height="32" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+			  		<path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+			  		<path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+					</svg>
+					<!-- 홈 메뉴 -->
+			    <span class="fs-4">Home</span>
+		    </a>
+    
+		    <!-- 메뉴 추가 -->
+		    <ul class="nav nav-pills">
+		    	<li class="nav-item">
+		    		<a href="./books.jsp" class="nav-link">도서 목록</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a href="./addBook.jsp" class="nav-link">도서 등록</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a href="./editBook.jsp?edit=update" class="nav-link">도서 수정</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a href="./editBook.jsp?edit=delete" class="nav-link">도서 삭제</a>
+		    	</li>
+		    </ul>
+    	</div>
+    </div>
+   </header>
 </body>
 </html>
