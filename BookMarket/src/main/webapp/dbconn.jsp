@@ -1,3 +1,5 @@
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.DriverManager"%>
@@ -13,9 +15,11 @@
 	<!-- JDBC API로 데이터베이스 접속하기 -->
 	<%
 		Connection conn = null;
-	
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
 		try {
-			String url = "jdbc:mysql://127.0.0.1:3306/jspbookdb";
+			String url = "jdbc:mysql://127.0.0.1:3306/bookmarketdb";
 			String user = "root";
 			String password = "redsafe0914!";
 		
