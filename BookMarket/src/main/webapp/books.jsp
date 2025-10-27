@@ -21,8 +21,8 @@
 		<%@ include file="header.jsp"  %>
 		
     <jsp:include page="title.jsp">
-    	<jsp:param value="도서 편집" name="title"/>
-    	<jsp:param value="BookEditing" name="subtitle"/>
+    	<jsp:param value="도서목록" name="title"/>
+    	<jsp:param value="BookList" name="subtitle"/>
     </jsp:include>
 
 	<%@ include file="dbconn.jsp" %>
